@@ -4,6 +4,32 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>AutoPath</Title>
+    <Authors>XFEstudio</Authors>
+    <Company>寰宇朽力网络科技有限公司</Company>
+    <Copyright>寰宇朽力网络科技有限公司版权所有</Copyright>
+    <Description>自动路径创建工具，自动创建不存在的文件夹，对路径统一管理</Description>
+    <PackageProjectUrl>https://github.com/XFEstudio/XFEExtension.NetCore.AutoPath</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/XFEstudio/XFEExtension.NetCore.AutoPath</RepositoryUrl>
+    <PackageTags>XFE;path;directory;auto</PackageTags>
+    <PackageReleaseNotes>First Release</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>logoIcon.png</PackageIcon>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\XFEExtension.NetCore.AutoPath.Analyzer\bin\Release\netstandard2.0\XFEExtension.NetCore.AutoPath.Analyzer.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+  </ItemGroup>
 
 </Project>

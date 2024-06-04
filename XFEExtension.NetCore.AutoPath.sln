@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.11.34929.205
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFEExtension.NetCore.AutoPath", "XFEExtension.NetCore.AutoPath\XFEExtension.NetCore.AutoPath.csproj", "{5AE91819-3D1B-497A-8910-28182ACE3053}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F1215C28-AB1D-4DE3-8546-31F21E283AA1} = {F1215C28-AB1D-4DE3-8546-31F21E283AA1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFEExtension.NetCore.AutoPath.Analyzer", "XFEExtension.NetCore.AutoPath.Analyzer\XFEExtension.NetCore.AutoPath.Analyzer.csproj", "{F1215C28-AB1D-4DE3-8546-31F21E283AA1}"
 EndProject
 Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
@@ -13,6 +18,10 @@ Global
 		{5AE91819-3D1B-497A-8910-28182ACE3053}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AE91819-3D1B-497A-8910-28182ACE3053}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AE91819-3D1B-497A-8910-28182ACE3053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1215C28-AB1D-4DE3-8546-31F21E283AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1215C28-AB1D-4DE3-8546-31F21E283AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1215C28-AB1D-4DE3-8546-31F21E283AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1215C28-AB1D-4DE3-8546-31F21E283AA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

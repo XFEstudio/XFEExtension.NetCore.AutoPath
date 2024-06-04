@@ -1,4 +1,4 @@
-﻿namespace XFEExtension.NetCore.PathExtension;
+﻿namespace XFEExtension.NetCore.AutoPath;
 
 /// <summary>
 /// 自动目录

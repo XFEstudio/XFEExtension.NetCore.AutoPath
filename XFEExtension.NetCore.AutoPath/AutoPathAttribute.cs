@@ -1,4 +1,4 @@
-﻿namespace XFEExtension.NetCore.PathExtension;
+﻿namespace XFEExtension.NetCore.AutoPath;
 
 /// <summary>
 /// 自动检测并生成对应文件夹
