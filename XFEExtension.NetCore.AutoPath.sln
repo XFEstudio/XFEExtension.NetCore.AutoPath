@@ -2,12 +2,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.34929.205
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFEExtension.NetCore.AutoPath", "XFEExtension.NetCore.AutoPath\XFEExtension.NetCore.AutoPath.csproj", "{5AE91819-3D1B-497A-8910-28182ACE3053}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XFEExtension.NetCore.AutoPath", "XFEExtension.NetCore.AutoPath\XFEExtension.NetCore.AutoPath.csproj", "{5AE91819-3D1B-497A-8910-28182ACE3053}"
 	ProjectSection(ProjectDependencies) = postProject
 		{F1215C28-AB1D-4DE3-8546-31F21E283AA1} = {F1215C28-AB1D-4DE3-8546-31F21E283AA1}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFEExtension.NetCore.AutoPath.Analyzer", "XFEExtension.NetCore.AutoPath.Analyzer\XFEExtension.NetCore.AutoPath.Analyzer.csproj", "{F1215C28-AB1D-4DE3-8546-31F21E283AA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XFEExtension.NetCore.AutoPath.Analyzer", "XFEExtension.NetCore.AutoPath.Analyzer\XFEExtension.NetCore.AutoPath.Analyzer.csproj", "{F1215C28-AB1D-4DE3-8546-31F21E283AA1}"
 EndProject
 Global
 	GlobalSection(ExtensibilityGlobals) = postSolution

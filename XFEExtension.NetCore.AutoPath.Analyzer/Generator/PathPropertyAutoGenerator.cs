@@ -133,7 +133,6 @@ namespace XFEExtension.NetCore.AutoPath.Analyzer.Generator
             {
                 SyntaxFactory.PropertyDeclaration(SyntaxFactory.ParseTypeName(className), "Options")
                 .WithModifiers(SyntaxFactory.TokenList(SyntaxFactory.Token(SyntaxKind.PublicKeyword), SyntaxFactory.Token(SyntaxKind.StaticKeyword)))
-                .AddAttributeLists(SyntaxFactory.AttributeList(SyntaxFactory.SingletonSeparatedList(SyntaxFactory.Attribute(SyntaxFactory.ParseName("global::XFEExtension.NetCore.ProfileExtension.ProfileInstanceAttribute")))))
                 .WithAccessorList(SyntaxFactory.AccessorList(SyntaxFactory.List(
                     new[]
                     {
