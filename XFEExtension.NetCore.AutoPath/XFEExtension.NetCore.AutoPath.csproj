@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -11,15 +11,19 @@
     <Copyright>寰宇朽力网络科技有限公司版权所有</Copyright>
     <Description>自动路径创建工具，自动创建不存在的文件夹，对路径统一管理</Description>
     <PackageTags>XFE;path;directory</PackageTags>
-    <PackageReleaseNotes>更新项目类型和元素值，删除属性和元素
+    <PackageReleaseNotes>
+      升级至 .NET 10 并集成自动化 CI/CD 工作流
 
-在`PathPropertyAutoGenerator.cs`文件中，删除了`Options`属性的`ProfileInstanceAttribute`属性列表。在`XFEExtension.NetCore.AutoPath.sln`解决方案文件中，项目类型已从旧的项目系统迁移到新的项目系统。在`XFEExtension.NetCore.AutoPath.csproj`项目文件中，进行了一系列更改，包括更新`Title`元素的值，删除`PackageProjectUrl`和`RepositoryUrl`元素，更新`PackageTags`元素的值，并添加了新的`Version`元素。
-</PackageReleaseNotes>
+      - 解决方案文件由 .sln 改为 .slnx，适配自动化场景
+      - 项目目标框架从 net8.0 升级为 net10.0
+      - 新增 validate.yml 和 publish-packages.yml，实现自动化构建与包发布
+      - 新增 PUBLISHING.md，完善发布流程文档
+    </PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>logoIcon.png</PackageIcon>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
