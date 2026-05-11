@@ -5,47 +5,47 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
 [![.NET](https://img.shields.io/badge/.NET-10.0-512BD4)](https://dotnet.microsoft.com/download)
 
-> 📖 English | [简体中文](https://github.com/XFEstudio/XFEExtension.NetCore.AutoPath/blob/master/README.zh-CN.md)
+> 📖 [English](https://github.com/XFEstudio/XFEExtension.NetCore.AutoPath/blob/master/README.zh-CN.md) | 简体中文
 
-## Description
+## 描述
 
-An automatic path creation tool that automatically creates non-existent folders and provides unified path management.
+自动路径创建工具，自动创建不存在的文件夹，对路径统一管理
 
-## Auto Path Management
+## 自动实现路径管理
 
-#### Basic Usage
+#### 基础用法
 
 ```csharp
-// Create a path management class
+//创建路径管理类
 public partial class AppPath
 {
     [AutoPath]
     readonly static string myTestPath = "MyTestPath/Test";
     [AutoPath]
-    readonly static string mySecTestPath = $"{MyTestPath}/Sec"; // Paths can reference auto-generated paths
+    readonly static string mySecTestPath = $"{MyTestPath}/Sec";//路径可以引用自动生成的路径
 }
 
 
-// Use the unified path management
+//使用统一管理的路径
 class Program
 {
     static void Main(string[] args)
     {
-        File.WriteAllText($"{AppPath.MyTestPath}/test.txt", "Hello World"); // MyTestPath will be auto-created if it does not exist
+        File.WriteAllText($"{AppPath.MyTestPath}/test.txt", "Hello World");//此时如果没有MyTestPath则会自动创建
         var exist = Directory.Exists(AppPath.MySecTestPath);
-        Console.WriteLine(exist); // Output: True
+        Console.WriteLine(exist);//结果为True
     }
 }
 ```
 
-#### Add Comments to Paths
+#### 为路径添加注释
 
 ```csharp
 public partial class AppPath
 {
     /// <summary>
-    /// Test path
-    /// This comment will be automatically added to the auto-generated Name property
+    /// 测试路径
+    /// 这段注释会自动添加至自动生成的Name属性上
     /// </summary>
     [AutoPath]
     readonly static string myTestPath = "MyTestPath/Test";
@@ -54,7 +54,7 @@ public partial class AppPath
 }
 ```
 
-#### Use Partial Methods to Set the Get Method
+#### 使用部分方法来设置get方法
 
 ```csharp
 public partial class AppPath
@@ -66,7 +66,7 @@ public partial class AppPath
 
     static partial void GetMyTestPathProperty()
     {
-        Console.WriteLine("MyTestPath was accessed");
+        Console.WriteLine("获取了MyTestPath");
     }
 }
 ```
