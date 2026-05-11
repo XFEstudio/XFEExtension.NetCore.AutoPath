@@ -9,7 +9,7 @@ This repository now includes two GitHub Actions workflows:
 
 Add this repository secret before publishing to NuGet.org:
 
-- `NUGET_API_KEY`: API key from NuGet.org with push permission for `XFEExtension.NetCore.AutoPath`
+- `NUGET_API_KEY`: API key from NuGet.org with push permission for `XFEExtension.NetCore.AutoConfig`
 
 No extra secret is required for GitHub Packages. The workflow uses the built-in `GITHUB_TOKEN` and requests `packages: write`.
 
